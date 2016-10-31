@@ -1,0 +1,121 @@
+[
+  {
+    "selected" : false,
+    "frame" : "{{0, 0}, {1024, 768}}",
+    "class" : "View",
+    "nodes" : [
+      {
+        "selected" : false,
+        "frame" : "{{317, 192}, {389, 32}}",
+        "class" : "Label",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "name" : "opponents_cards_label",
+          "frame" : "{{437, 368}, {150, 32}}",
+          "uuid" : "0E95E910-7309-453D-A388-01E1EA6E9099",
+          "class" : "Label",
+          "alignment" : "left",
+          "text" : "Opponent's cards:     ?     ?     ?",
+          "font_size" : 18,
+          "font_name" : "<System>"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{375, 560}, {331, 32}}",
+        "class" : "Label",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "font_size" : 18,
+          "frame" : "{{437, 368}, {150, 32}}",
+          "uuid" : "0E95E910-7309-453D-A388-01E1EA6E9099",
+          "class" : "Label",
+          "alignment" : "left",
+          "text" : "Your cards:     ?     ?     ? ",
+          "name" : "player_cards_label",
+          "font_name" : "<System>"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{127, 373}, {97, 32}}",
+        "class" : "Button",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "action" : "check_touch_up_inside",
+          "frame" : "{{472, 368}, {80, 32}}",
+          "title" : "Check",
+          "uuid" : "3AF6399A-841E-4A9C-9DFF-7AFAE9146709",
+          "class" : "Button",
+          "name" : "check_button",
+          "font_size" : 30
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{799, 373}, {97, 32}}",
+        "class" : "Button",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "action" : "draw_touch_up_inside",
+          "frame" : "{{472, 368}, {80, 32}}",
+          "title" : "Draw",
+          "uuid" : "3AF6399A-841E-4A9C-9DFF-7AFAE9146709",
+          "class" : "Button",
+          "name" : "draw_button",
+          "font_size" : 30
+        }
+      },
+      {
+        "selected" : true,
+        "frame" : "{{317, 265}, {389, 248}}",
+        "class" : "Label",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "name" : "reply_label",
+          "frame" : "{{437, 368}, {150, 32}}",
+          "uuid" : "E2191A08-8A7E-4F2D-9094-8F7D991275E9",
+          "class" : "Label",
+          "alignment" : "center",
+          "text" : "",
+          "font_size" : 24,
+          "font_name" : "<System>"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{127, 560}, {97, 32}}",
+        "class" : "Button",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "action" : "restart_touch_up_inside",
+          "frame" : "{{472, 368}, {80, 32}}",
+          "title" : "Restart",
+          "uuid" : "3AF6399A-841E-4A9C-9DFF-7AFAE9146709",
+          "class" : "Button",
+          "name" : "restart_button",
+          "font_size" : 30
+        }
+      }
+    ],
+    "attributes" : {
+      "enabled" : true,
+      "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+      "tint_color" : "RGBA(0.000000,0.478000,1.000000,1.000000)",
+      "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+      "flex" : ""
+    }
+  }
+]

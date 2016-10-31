@@ -1,0 +1,81 @@
+//Created by: Matthew Lourenco
+//Created on: Oct 28, 2016
+//This program is a simplified version of 21
+
+import Darwin
+
+var computer_cards: [Int] = []
+var player_cards: [Int] = []
+
+//finds computer cards
+for computer_card_index in 0...2 {
+computer_cards.append(Int(arc4random_uniform(10) + 1))
+}
+
+//finds player cards
+for player_card_index in 0...1 {
+player_cards.append(Int(arc4random_uniform(10) + 1))
+}
+
+func display_player_cards() {
+    //displays player cards
+    show("Your cards are:")
+    for show_player_cards in player_cards {
+        show(show_player_cards)
+    }
+}
+
+display_player_cards()
+
+//asks for draw or check (Yes/No)
+show("Would you like to draw a card?")
+while true {
+    //gets input (Yes/No). Decides what to do if draw or check is chosen. 
+    let draw_or_check = ask("(Yes/No)")
+    if draw_or_check == "Yes" || draw_or_check == "yes" {
+        //draws a card for the player
+        player_cards.append(Int(arc4random_uniform(10) + 1))
+        display_player_cards()
+        break
+    } else if draw_or_check == "No" || draw_or_check == "no" {
+        display_player_cards()
+        break
+    } else {
+        show("Enter Yes or No. Would you like to draw a card?")
+    }
+}
+
+//Shows the computer's cards
+show("The computer's cards are:")
+for show_computer_cards in computer_cards {
+    show(show_computer_cards)
+}
+
+//finds the totals
+var player_total: Int = 0
+var computer_total: Int = 0
+
+//finds player total and shows it
+for calculate_player_total in player_cards {
+    player_total = player_total + calculate_player_total
+}
+show("Your total is: " + String(player_total))
+
+//finds computer total and shows it
+for calculate_computer_total in computer_cards {
+    computer_total = computer_total + calculate_computer_total
+}
+show("The computer's total is: " + String(computer_total))
+
+//finds the winner
+if computer_total == player_total {
+    show("Tie!")
+} else if computer_total > 21 && player_total > 21 {
+    show("Tie!")
+} else if player_total > computer_total && player_total < 22 {
+    show("You won!")
+} else if computer_total < 22 {
+    show("You lose.")
+} else {
+    show("You won!")
+}
